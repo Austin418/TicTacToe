@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='author' content='Austin Farwell'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content''>
+    <meta property='og:image' content=''>
+    <meta property='og:title' content=''>
+    <meta property='og:description' content=''>
+    <title>Tic-Tac-Toe</title>
+    <link rel='stylesheet' href='style.css'>
+    <link rel='shortcut icon' href='' type='image/x-icon'>
+</head>
+
+<body>
+    
+    <header>
+        <h1 id="head">Tic-Tac-Toe</h1>
+    </header>
+
+    <div class="top">
+        <p id="player">Player: </p>
+        <p id="turn">Turn: </p>
+    </div>
+
+    <main class="grid">
+        <div>
+            <p id="a1" onclick="placeMark('a1')" class="square"> </p>
+        </div>
+        <div>
+            <p id="a2" onclick="placeMark('a2')" class="square"> </p>
+        </div>
+        <div>
+            <p id="a3" onclick="placeMark('a3')" class="square"> </p>
+        </div>
+        <div>
+            <p id="b1" onclick="placeMark('b1')" class="square"> </p>
+        </div>
+        <div>
+            <p id="b2" onclick="placeMark('b2')" class="square"> </p>
+        </div>
+        <div>
+            <p id="b3" onclick="placeMark('b3')" class="square"> </p>
+        </div>
+        <div>
+            <p id="c1" onclick="placeMark('c1')" class="square"> </p>
+        </div>
+        <div>
+            <p id="c2" onclick="placeMark('c2')" class="square"> </p>
+        </div>
+        <div>
+            <p id="c3" onclick="placeMark('c3')" class="square"> </p>
+        </div>
+    </main>
+
+    <footer>
+
+        <div>
+            <h3 id="xWin">X -  wins:</h3>
+            <h3 id="oWin">O -  wins:</h3>
+        </div>
+
+        <button class="reset" onclick="resetGame()">RESET</button>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

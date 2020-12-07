@@ -1,0 +1,154 @@
+*, *::after, *::before{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: cyan;
+    -webkit-text-stroke: black 1px;
+}
+
+:root{ }
+
+
+body{
+    background: url(media/maxresdefault.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 50px 15px 15px auto 15px 15px;
+    grid-template-columns: auto;
+}
+header h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-text-stroke: black 1px;
+    animation-name: colorShift;
+}
+
+div.top p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.grid{
+    display: grid;
+    grid-template-columns: 125px 125px 125px;
+    grid-template-rows: 125px 125px 125px;
+    margin-top: 35px;
+    height: 375px;
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main.grid p{
+    width: 125px;
+    height: 125px;
+    animation-name: colorShift;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+main.grid p:active{
+    box-shadow: inset 5px 5px 15px;
+}
+
+main.grid p#a1{
+    border: 3px cyan solid;
+    border-left: none;
+    border-top: none;
+}
+main.grid p#a2{
+    border: 3px cyan solid;
+    border-top: none;
+}
+main.grid p#a3{
+    border: 3px cyan solid;
+    border-top: none;
+    border-right: none;
+}
+main.grid p#b1{
+    border: 3px cyan solid;
+    border-left: none;
+}
+main.grid p#b2{
+    border: 3px cyan solid;
+}
+main.grid p#b3{
+    border: 3px cyan solid;
+    border-right: none;
+}
+main.grid p#c1{
+    border: 3px cyan solid;
+    border-left: none;
+    border-bottom: none;
+}
+main.grid p#c2{
+    border: 3px cyan solid;
+    border-bottom: none;
+}
+main.grid p#c3{
+    border: 3px cyan solid;
+    border-bottom: none;
+    border-right: none;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    margin-top: 65vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer div p.wins{
+    margin-left: 25vh;
+    padding-bottom: 20px;
+    margin-top: 5px;
+}
+
+h3.oScore, h3.xScore{
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 50vh;
+    margin-left: 25vh;
+}
+
+.square{
+    text-align: center;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding: auto;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@keyframes colorShift{
+    1%{border-color: cyan;}
+    25%{border-color: lightslategrey;}
+    50%{border-color: #DB5100;}
+    75%{border-color: lightslategrey;}
+    99%{border-color: cyan;}
+}
+
+button.reset{
+    outline: 0;
+    color: black;
+    background-color: cyan;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: lighter;
+    
+
+}
